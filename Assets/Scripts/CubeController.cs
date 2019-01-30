@@ -20,5 +20,10 @@ public class CubeController : MonoBehaviour
         float timescale = Time.deltaTime;
 
         transform.position = transform.position + new Vector3(x * timescale * Speed, 0, z * timescale * Speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Pressed space !");
+        }
     }
 }
